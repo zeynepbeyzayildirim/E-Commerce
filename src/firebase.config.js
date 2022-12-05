@@ -10,7 +10,7 @@ const firebaseConfig = {
     projectId: "ecommerce-aa340",
     storageBucket: "ecommerce-aa340.appspot.com",
     messagingSenderId: "378170397151",
-    appId: "1:378170397151:web:021b0f8f40086df5ea746a"
+    appId: "1:378170397151:web:021b0f8f40086df5ea746a",
   };
 
   const app = getApps.Length > 0 ? getApp() : initializeApp(firebaseConfig);

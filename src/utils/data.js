@@ -38,36 +38,36 @@ export const categories =[
   {
     id:1,
     name: "Chicken",
-    urlParametre:"chicken",
+    urlParamName:"chicken",
   },
   {
     id:2,
     name: "Curry",
-    urlParametre:"curry",
+    urlParamName:"curry",
   },
   {
     id:3,
     name: "Rice",
-    urlParametre:"rice",
+    urlParamName:"rice",
   },
   {
     id:4,
     name: "Fish",
-    urlParametre:"fish",
+    urlParamName:"fish",
   },
   {
     id:5,
     name: "Fruits",
-    urlParametre:"furits",
+    urlParamName:"fruits",
   },
   {
     id:6,
     name: "Icecreams",
-    urlParametre:"icecreams",
+    urlParamName:"icecreams",
   },
   {
     id:7,
     name: "Soft Drinks",
-    urlParametre:"drinks",
+    urlParamName:"soft drinks",
   },
 ]

@@ -1,8 +1,8 @@
 import I1 from "../asset/img/i1.png";
 import F1 from "../asset/img/f1.png";
-import C3 from "../asset/img/c3.png";
-import Fi1 from "../asset/img/fi1.png";
-
+import B1 from "../asset/img/b4.png";
+import V1 from "../asset/img/v1.png";
+import { IoFastFood } from "react-icons/io5";
  export const heroData = [
   {
     id: 1,
@@ -20,54 +20,61 @@ import Fi1 from "../asset/img/fi1.png";
   },
   {
     id: 3,
-    name: "Chicken Kebab",
-    decp: "Mixed Kebab Plate",
-    price: "8.25",
-    imageSrc: C3,
+    name: "Muffin",
+    decp: "Bakery-Muffin",
+    price: "2.25",
+    imageSrc: B1,
   },
   {
     id: 4,
     name: "Fish Kebab",
     decp: "Mixed Fish Kebab",
     price: "5.25",
-    imageSrc: Fi1,
+    imageSrc: V1,
   },
 ];
 
 export const categories =[
   {
     id:1,
-    name: "Chicken",
-    urlParamName:"chicken",
+    name: "Greengrocery",
+    urlParamName:"greengrocery",
+    icon: {IoFastFood},
   },
   {
     id:2,
-    name: "Curry",
-    urlParamName:"curry",
+    name: "Dairy Products",
+    urlParamName:"dairy products",
+    icon: {IoFastFood},
   },
   {
     id:3,
-    name: "Rice",
-    urlParamName:"rice",
+    name: "Snack",
+    urlParamName:"snack",
+    icon: {IoFastFood},
   },
   {
     id:4,
-    name: "Fish",
-    urlParamName:"fish",
+    name: "Bakery",
+    urlParamName:"bakery",
+    icon: {IoFastFood},
   },
   {
     id:5,
-    name: "Fruits",
-    urlParamName:"fruits",
+    name: "Meat, Poultry & Fish",
+    urlParamName:"meat poultry fish",
+    icon: {IoFastFood},
   },
   {
     id:6,
-    name: "Icecreams",
-    urlParamName:"icecreams",
+    name: "Frozen Food",
+    urlParamName:"frozen food",
+    icon: {IoFastFood},
   },
   {
     id:7,
-    name: "Soft Drinks",
-    urlParamName:"soft drinks",
+    name: "Drinks",
+    urlParamName:"drinks",
+    icon: {IoFastFood},
   },
 ]

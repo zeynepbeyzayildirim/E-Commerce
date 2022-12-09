@@ -3,7 +3,9 @@ import { BiMinus, BiPlus } from "react-icons/bi";
 import { motion } from "framer-motion";
 import { useStateValue } from "../context/StateProvider";
 import { actionType } from "../context/reducer";
-import {fetchCart} from "../utils/fetchLocalStrogeData"
+import {fetchCart} from "../utils/fetchLocalStrogeData";
+
+
 let items = [];
 
 const CartItem = ({ item, setFlag, flag }) => {
@@ -19,12 +21,14 @@ const CartItem = ({ item, setFlag, flag }) => {
   };
 
   const updateQty = (action, id) => {
+   
     if (action == "add") {
       setQty(qty + 1);
       cartItems.map((item) => {
-        if (item.id === id) {
+        if (item.id === id) {  
           item.qty += 1;
           setFlag(flag + 1);
+        
         }
       });
       cartDispatch();

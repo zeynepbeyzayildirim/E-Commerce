@@ -11,7 +11,7 @@ import CartItem from "./CartItem";
 const CartContainer = () => {
     
   const [{ cartShow, cartItems, user }, dispatch] = useStateValue();
-  const [flag, setFlag] = useState(1);
+  const [flag, setFlag] = useState(0);
   const [tot, setTot] = useState(0);
 
   const showCart = () => {
@@ -21,7 +21,7 @@ const CartContainer = () => {
     });
   };
 
-  useEffect(() => {
+  useEffect((total) => {
     let totalPrice = cartItems.reduce(function (accumulator, item) {
       return accumulator + item.qty * item.price;
     }, 0);
@@ -102,7 +102,7 @@ const CartContainer = () => {
               <motion.button
                 whileTap={{ scale: 0.8 }}
                 type="button"
-                className="w-full p-2 rounded-full bg-gradient-to-tr from-orange-400 to-orange-600 text-gray-50 text-lg my-2 hover:shadow-lg"
+                className="w-full p-2 rounded-full bg-gradient-to-tr from-red-400 to-red-600 text-gray-50 text-lg my-2 hover:shadow-lg"
               >
                 Check Out
               </motion.button>
@@ -110,7 +110,7 @@ const CartContainer = () => {
               <motion.button
                 whileTap={{ scale: 0.8 }}
                 type="button"
-                className="w-full p-2 rounded-full bg-gradient-to-tr from-orange-400 to-orange-600 text-gray-50 text-lg my-2 hover:shadow-lg"
+                className="w-full p-2 rounded-full bg-gradient-to-tr from-red-400 to-red-600 text-gray-50 text-lg my-2 hover:shadow-lg"
               >
                 Login to check out
               </motion.button>
